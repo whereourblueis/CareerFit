@@ -1,0 +1,105 @@
+/* 기본 컨테이너 */
+.doc-feedback-container {
+  font-family: "GothicA1";
+  padding: 15px 50px;
+}
+
+/* 제목 + 설명 */
+.doc-feedback-header {
+  margin-bottom: 20px;
+}
+.doc-feedback-header h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.doc-feedback-header p {
+  color: #555;
+  font-size: 13px;
+}
+
+/* 등급 설명 */
+.level-info {
+  margin-bottom: 25px;
+  padding: 1px 15px;
+  border-left: 4px solid #5d6dbe;
+  background: #f9f9ff;
+  font-size: 12px;
+}
+.level-info p {
+  margin: 1px 0;
+  font-weight: 500;
+}
+
+/* 전문가 리스트 */
+.experts-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 가로 2명 */
+  column-gap: 60px;
+  row-gap: 50px;
+  margin-bottom: 30px;
+  justify-content: center; /* 카드들을 가운데로 정렬 */
+  margin: 0 auto; /* 부모 기준 가운데 배치 */
+}
+
+.expert-card {
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #fff;
+  display: flex; /* 사진 + 글씨 가로 배치 */
+  align-items: center; /* 세로 가운데 정렬 */
+  gap: 15px; /* 사진과 글씨 간격 */
+  width: 450px; /* 카드 가로 크기 줄이기 */
+  height: 130px;
+}
+
+.expert-card:hover {
+  border-color: #5d6dbe;
+  box-shadow: 0 5px 8px rgba(93, 109, 190, 0.2);
+}
+
+.expert-card.selected {
+  border-color: #5d6dbe;
+  background: #f3f4fd;
+}
+
+/* 전문가 프로필 이미지 */
+.expert-photo {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px; /* 사각형 */
+  flex-shrink: 0; /* 이미지 크기 고정 */
+}
+
+/* 전문가 정보 */
+.expert-info {
+  flex: 1; /* 남은 공간 채우기 */
+  text-align: right; /* 글씨 오른쪽 정렬 */
+}
+.expert-info p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+/* 예약 버튼 */
+.booking-button-container {
+  margin-top: 20px;
+  text-align: right;
+}
+.booking-btn {
+  padding: 15px 30px;
+  background: #5d6dbe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  font-size: 16px;
+}
+.booking-btn:hover {
+  background: #4954a3;
+}

@@ -1,0 +1,182 @@
+.edit-profile-container {
+  max-width: 500px;
+  margin: 34px auto;
+  padding: 30px 70px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: "GothicA1";
+}
+
+.edit-header {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.edit-header h2 {
+  font-size: 22px;
+  margin-top: 8px;
+  margin-bottom: 17px;
+}
+
+.edit-header .subtitle {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 공통 폼 스타일 */
+.edit-form .form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-form input {
+  padding: 11px 13px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.edit-form input:focus {
+  border-color: #5d6dbe;
+}
+
+/* 비밀번호 토글 */
+.input-with-btn {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-btn input {
+  flex: 1;
+}
+
+.toggle-pw {
+  margin-left: 10px;
+  font-size: 13px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100px;
+  padding: 10px 0;
+}
+
+.toggle-pw:hover {
+  background: #e0e0e0;
+}
+
+/* 버튼 영역 */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 10px 0.5px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  transition: 0.2s;
+  width: 100px;
+}
+
+.btn.primary {
+  background: #5d6dbe;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #4954a3;
+}
+
+.btn.cancel {
+  background: #ddd;
+  color: #333;
+}
+
+.btn.cancel:hover {
+  background: #bbb;
+}
+
+/* 비밀번호 메시지 */
+.password-message {
+  font-size: 13px;
+  color: #5d6dbe;
+  margin-top: 5px;
+}
+
+.success {
+  font-size: 13px;
+  color: green;
+  margin-top: 5px;
+}
+
+.error {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px;
+}
+
+/* 이메일 인증 버튼 */
+.btn.send,
+.btn.verify {
+  background: #5d6dbe;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+  padding: 9px 1px;
+  font-size: 14px !important;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+}
+
+.btn.send:hover,
+.btn.verify:hover {
+  background: #4954a3;
+}
+
+/* 인증번호 입력 영역 */
+.edit-form .form-row input + .btn.send,
+.edit-form .form-row input + .btn.verify {
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+/* 이메일 입력 + 인증 버튼 한 줄 */
+.input-with-btn.email,
+.input-with-btn.verification {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-with-btn.email input,
+.input-with-btn.verification input {
+  flex: 1;
+}
+
+.input-with-btn .btn.send,
+.input-with-btn .btn.verify {
+  margin-top: 0;
+}
